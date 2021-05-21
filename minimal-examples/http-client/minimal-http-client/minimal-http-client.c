@@ -243,6 +243,7 @@ system_notify_cb(lws_state_manager_t *mgr, lws_state_notify_link_t *link,
 		i.ssl_connection = 0;
 
 	i.ssl_connection |= LCCSCF_H2_QUIRK_OVERFLOWS_TXCR |
+			    LCCSCF_ACCEPT_TLS_DOWNGRADE_REDIRECTS |
 			    LCCSCF_H2_QUIRK_NGHTTP2_END_STREAM;
 
 	i.alpn = "h2";
